@@ -23,11 +23,4 @@ plugins {
     alias(libs.plugins.compose) apply false
 }
 
-develocity {
-    buildScan {
-        termsOfUseUrl.set("https://gradle.com/help/legal-terms-of-use")
-        termsOfUseAgree.set("yes")
-    }
-}
-
 apply("${project.rootDir}/buildscripts/toml-updater-config.gradle")
